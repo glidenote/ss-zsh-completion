@@ -41,6 +41,4 @@ _arguments -s -S \
   '(-D --diag)'{-D,--diag=}'[Dump raw information about TCP sockets to FILE]:_files' \
   '(-F --filter)'{-F,--filter=}'[read filter information from FILE. FILTER := \[ state TCP-STATE \] \[ EXPRESSION \]]:_files' \
   '(-):command: _command_names -e' \
-  '*::args: _normal' \
-  && return 0
-
+  '*::args: _normal'
