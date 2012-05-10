@@ -36,7 +36,7 @@ _arguments -s -S \
   '(-d --dccp)'{-d,--dccp}'[display only DCCP sockets]' \
   '(-w --raw)'{-w,--raw}'[display only RAW sockets]' \
   '(-x --unix)'{-x,--unix}'[display only Unix domain sockets]' \
-  '(-f --family)'{-f,--family=}'[display sockets of type FAMILY]' \
+  '(-f --family)'{-f,--family=}'[display sockets of type FAMILY]:family:(unix inet inet6 link netlink)' \
   '(-A --query --socket)'{-A,--query=,--socket=}'[QUERY := {all|inet|tcp|udp|raw|unix|packet|netlink}]:query:(all inet tcp udp raw unix packet netlink)' \
   '(-D --diag)'{-D,--diag=}'[Dump raw information about TCP sockets to FILE]:_files' \
   '(-F --filter)'{-F,--filter=}'[read filter information from FILE. FILTER := \[ state TCP-STATE \] \[ EXPRESSION \]]:_files' \
